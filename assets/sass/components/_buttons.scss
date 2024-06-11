@@ -1,0 +1,114 @@
+.template-btn {
+  display: inline-flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  transition: $transition;
+  @include screen-992 {
+    padding: 9px 20px;
+  }
+  &:disabled {
+    background: $gray-color-100 !important;
+    color: $gray-color-400 !important;
+    cursor: not-allowed !important;
+  }
+  &.primary-btn {
+    background: $primary-color-500;
+    color: $white-color;
+    &:hover {
+      background: $primary-color-700;
+    }
+  }
+}
+
+.gs-dash-badge {
+  display: flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  color: $white-color;
+  text-transform: capitalize;
+  transition: $transition;
+  font-size: 12px!important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  &[data-bs-toggle="dropdown"] {
+    &::after {
+      content: "\f078";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: $white-color;
+      width: 16px;
+      border: none;
+      margin-left: 8px;
+      font-size: 12px;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+
+.view-dark-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: $secondary-color-950;
+  color: $white-color;
+  transition: $transition;
+  &:hover {
+    background-color: $gray-color-700;
+  }
+}
+
+.sm-badge {
+  display: flex;
+  // width: 90px;
+  // height: 28px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  &.complete {
+    background: $positive-color-500;
+
+    color: $white-color;
+  }
+}
+
+.edit-icon-btn,
+.del-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  color: $white-color;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transition;
+}
+.edit-icon-btn {
+  background-color: $primary-color-500;
+  &:hover {
+    background-color: $primary-color-700;
+  }
+}
+.del-icon-btn {
+  background-color: $negative-color-500;
+  &:hover {
+    background-color: $negative-color-700;
+  }
+}

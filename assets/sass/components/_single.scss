@@ -1,0 +1,61 @@
+// single-gs-dash-info-card
+.single-gs-dash-info-card {
+  padding: 24px 16px;
+  background-color: $white-color;
+  border-radius: 8px;
+  position: relative;
+  .dropdown {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    .dropdown-toggle {
+      &::after {
+        content: initial;
+      }
+    }
+  }
+  .icon-wrappper {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .des {
+    color: $gray-color-700;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    margin-bottom: 4px;
+  }
+  .btm-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: baseline;
+    h4 {
+      color: $gray-color-900;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+    }
+
+    .sm-info {
+      color: $gray-color-900;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      .plus {
+        color: $positive-color-500;
+      }
+      .minus {
+        color: $negative-color-500;
+      }
+    }
+  }
+}

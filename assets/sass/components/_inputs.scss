@@ -1,0 +1,91 @@
+// gs-dash-input
+.dash-input-wrapper {
+  .form-label {
+    display: inline-block;
+    color: $gray-color-900;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 8px;
+    .hint-txt {
+      color: $gray-color-500;
+    }
+  }
+
+  .gs-dash-input {
+    // height: 52px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: $gray-color-300;
+    background: $white-color;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: $gray-color-900;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    transition: $transition;
+    @include screen-992 {
+      padding: 9px 20px;
+    }
+    &::placeholder {
+      color: $gray-color-400;
+    }
+    &[disabled] {
+      background: $gray-color-50;
+    }
+    &.error {
+      border-color: $negative-color-400;
+    }
+    &:focus {
+      border-color: $primary-color-300;
+      background-color: $white-color;
+    }
+  }
+}
+
+// input switch
+.form-switch {
+  .form-check-input {
+    display: flex;
+    width: 44px;
+    height: 24px;
+    padding: 2px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: none;
+    background-color: $gray-color-100;
+    border-color: $gray-color-100;
+    --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='26' height='24' viewBox='0 0 26 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.5' y='2' width='20' height='20' rx='10' fill='white'/%3E%3C/svg%3E%0A");
+
+    &:checked[type="checkbox"] {
+      background-color: $primary-color-500;
+      border-color: $primary-color-500;
+      --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='26' height='24' viewBox='0 0 26 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.5' y='2' width='20' height='20' rx='10' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    &:focus {
+      --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='26' height='24' viewBox='0 0 26 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.5' y='2' width='20' height='20' rx='10' fill='white'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+.error-msg,
+.hint-msg {
+  margin-top: 6px;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.error-msg {
+  color: $negative-color-500;
+}
+
+.hint-msg {
+  color: $gray-color-600;
+}

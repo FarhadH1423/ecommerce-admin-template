@@ -1,0 +1,110 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+// Template Font Name
+$template-font: "Poppins", sans-serif;
+
+// Template Color Name
+$white-color: #ffffff;
+$dark-color: #030712;
+
+$gray-color-950: #000f1a;
+$gray-color-900: #1a2731;
+$gray-color-800: #333f48;
+$gray-color-700: #404b53;
+$gray-color-600: #666f76;
+$gray-color-500: #8c9398;
+$gray-color-400: #adb2b6;
+$gray-color-300: #bfc3c6;
+$gray-color-200: #d4d6d8;
+$gray-color-100: #e6e7e8;
+$gray-color-50: #f7f8f8;
+
+$primary-color-950: #000f1a;
+$primary-color-900: #002038;
+$primary-color-800: #003e6b;
+$primary-color-700: #005ea3;
+$primary-color-600: #007cd6;
+$primary-color-500: #0d99ff;
+$primary-color-400: #3dadff;
+$primary-color-300: #70c3ff;
+$primary-color-200: #9ed6ff;
+$primary-color-100: #d1ecff;
+$primary-color-50: #e5f4ff;
+
+$secondary-color-950: #1a0002;
+$secondary-color-900: #380004;
+$secondary-color-800: #6b0008;
+$secondary-color-700: #a3000d;
+$secondary-color-600: #d60011;
+$secondary-color-500: #ff0d20;
+$secondary-color-400: #ff3d4c;
+$secondary-color-300: #ff707b;
+$secondary-color-200: #ff9ea6;
+$secondary-color-100: #ffd1d5;
+$secondary-color-50: #ffe5e8;
+
+$tertiary-color-950: #1a1700;
+$tertiary-color-900: #383400;
+$tertiary-color-800: #6b6300;
+$tertiary-color-700: #a39600;
+$tertiary-color-600: #d6c500;
+$tertiary-color-500: #ffec0d;
+$tertiary-color-400: #fff03d;
+$tertiary-color-300: #fff470;
+$tertiary-color-200: #fff79e;
+$tertiary-color-100: #fffbd1;
+$tertiary-color-50: #fffde5;
+
+$positive-color-950: #031109;
+$positive-color-900: #082615;
+$positive-color-800: #104c2a;
+$positive-color-700: #17723f;
+$positive-color-600: #1f9854;
+$positive-color-500: #27be69;
+$positive-color-400: #45d985;
+$positive-color-300: #73e2a4;
+$positive-color-200: #a2ecc2;
+$positive-color-100: #d0f5e1;
+$positive-color-50: #e6faee;
+
+$negative-color-950: #1d0206;
+$negative-color-900: #39040b;
+$negative-color-800: #730817;
+$negative-color-700: #ac0c22;
+$negative-color-600: #e5102e;
+$negative-color-500: #f2415a;
+$negative-color-400: #f5667a;
+$negative-color-300: #f78c9c;
+$negative-color-200: #fab3bd;
+$negative-color-100: #fcd9de;
+$negative-color-50: #feecee;
+
+$warning-color-950: #1a1300;
+$warning-color-900: #382900;
+$warning-color-800: #6b4f00;
+$warning-color-700: #a37800;
+$warning-color-600: #d69d00;
+$warning-color-500: #ffbf0f;
+$warning-color-400: #ffcb3d;
+$warning-color-300: #ffd970;
+$warning-color-200: #ffe59e;
+$warning-color-100: #fff3d1;
+$warning-color-50: #fff8e5;
+
+$info-color-950: #00071f;
+$info-color-900: #000e3d;
+$info-color-800: #001b75;
+$info-color-700: #002ab3;
+$info-color-600: #0037eb;
+$info-color-500: #295bff;
+$info-color-400: #527aff;
+$info-color-300: #809dff;
+$info-color-200: #a8bdff;
+$info-color-100: #d6e0ff;
+$info-color-50: #ebefff;
+
+
+// Transition
+$transition: all 0.3s ease-in;
+$transition2: all 0.1s ease-out;

@@ -1,0 +1,6 @@
+// sidebar width 
+$sidebar_width: 314px;
+
+@include screen-1440 {
+    $sidebar_width: 280px;
+}

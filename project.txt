@@ -1,0 +1,5 @@
+fix hero_section_list.html 
+modal 
+
+
+about.html modal is fixed. follow this modal
