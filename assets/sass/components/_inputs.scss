@@ -1,5 +1,11 @@
 // gs-dash-input
 .dash-input-wrapper {
+  position: relative;
+  .input-subheading {
+    font-size: 14px;
+    color: $gray-color-600;
+    font-weight: 400;
+  }
   .form-label {
     display: inline-block;
     color: $gray-color-900;
@@ -13,6 +19,30 @@
     }
   }
 
+  .nice-select:after {
+    position: absolute;
+    right: 10px;
+  }
+
+  .form-control option:hover {
+    background-color: #e9ecef;
+  }
+
+  .full-width-nice {
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    color: $gray-color-600;
+  }
+  .gs-dash-nice-select {
+    ul.list {
+      li {
+        justify-content: flex-start;
+        color: $gray-color-600;
+      }
+    }
+  }
+
   .gs-dash-input {
     // height: 52px;
     padding: 8px 16px;
@@ -21,7 +51,7 @@
     border-color: $gray-color-300;
     background: $white-color;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    color: $gray-color-900;
+    color: $gray-color-400;
     text-overflow: ellipsis;
     font-size: 16px;
     font-style: normal;
