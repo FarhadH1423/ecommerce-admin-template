@@ -17,7 +17,7 @@
 
 // gs-dash-main-content
 .gs-dash-main-content {
-  margin-left: 314px;
+  margin-left: 290px;
   padding: 32px 40px;
   background-color: $gray-color-50;
   height: 100%;
@@ -113,6 +113,12 @@
   .sub-header {
     font-size: 20px;
     font-weight: 500;
+    @include screen-992 {
+      font-size: 18px;
+    }
+    @include screen-768 {
+      font-size: 16px;
+    }
   }
   .sub-header-p {
     font-size: 14px;
@@ -169,6 +175,13 @@
       gap: 20px;
     }
     .single-img-wrapper {
+      .profile-img {
+        max-width: 320px;
+        max-height: 320px;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
       width: calc(25% - 60px);
       &.thumbnail-wrapper {
         max-width: 568px;
@@ -178,6 +191,7 @@
           height: 100%;
         }
       }
+
       @include screen-1600 {
         width: calc(33.33% - 30px);
       }

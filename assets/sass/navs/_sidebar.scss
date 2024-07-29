@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 314px;
+  width: 290px;
   height: 100%;
   overflow-y: scroll;
   // overflow-x: hidden;
@@ -52,11 +52,9 @@
 
   // dash-menu-wrapper
   .dash-menu-wrapper {
-    padding: 32px 16px;
+    padding: 32px 10px;
     height: 100%;
     padding-bottom: 60px;
-
-
 
     @include screen-1200 {
       padding: 16px 10px;

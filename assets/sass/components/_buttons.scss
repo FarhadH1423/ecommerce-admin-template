@@ -16,11 +16,30 @@
     color: $gray-color-400 !important;
     cursor: not-allowed !important;
   }
+
   &.primary-btn {
     background: $primary-color-500;
     color: $white-color;
     &:hover {
       background: $primary-color-700;
+    }
+  }
+
+  &.non-active-theme {
+    background: $gray-color-800;
+    color: $white-color;
+    &:hover {
+      background: $gray-color-900;
+    }
+  }
+
+  &.outline-btn {
+    background: transparent;
+    color: $primary-color-500;
+    border: 1px solid $primary-color-500;
+    &:hover {
+      background: $primary-color-500;
+      color: $white-color;
     }
   }
 }
@@ -36,7 +55,7 @@
   color: $white-color;
   text-transform: capitalize;
   transition: $transition;
-  font-size: 12px!important;
+  font-size: 12px !important;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;

@@ -1,6 +1,6 @@
 // gs-dash-header
 .gs-dash-header {
-  margin-left: 314px;
+  margin-left: 290px;
   padding: 20px 40px;
   background-color: $white-color;
   display: flex;
@@ -11,7 +11,6 @@
   top: 0;
   z-index: 15;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.08);
-
 
   @include screen-1440 {
     margin-left: 270px;

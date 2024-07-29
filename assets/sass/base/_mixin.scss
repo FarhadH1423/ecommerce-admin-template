@@ -1,70 +1,82 @@
+@mixin screen-370 {
+  @media (max-width: 369.97px) {
+    @content;
+  }
+}
+
 @mixin screen-425 {
-    @media (max-width: 424.97px) {
-        @content;
-    }
+  @media (max-width: 424.97px) {
+    @content;
+  }
+}
+
+@mixin screen-460 {
+  @media (max-width: 459.97px) {
+    @content;
+  }
 }
 @mixin screen-576 {
-    @media (max-width: 575.97px) {
-        @content;
-    }
+  @media (max-width: 575.97px) {
+    @content;
+  }
 }
 @mixin screen-768 {
-    @media (max-width: 767.97px) {
-        @content;
-    }
+  @media (max-width: 767.97px) {
+    @content;
+  }
 }
 @mixin screen-992 {
-    @media (max-width: 991.97px) {
-        @content;
-    }
+  @media (max-width: 991.97px) {
+    @content;
+  }
 }
 @mixin screen-1024 {
-    @media (max-width: 1023.97px) {
-        @content;
-    }
+  @media (max-width: 1023.97px) {
+    @content;
+  }
 }
 @mixin screen-1200 {
-    @media (max-width: 1199.97px) {
-        @content;
-    }
+  @media (max-width: 1199.97px) {
+    @content;
+  }
 }
 @mixin screen-1200 {
-    @media (max-width: 1199.97px) {
-        @content;
-    }
+  @media (max-width: 1199.97px) {
+    @content;
+  }
 }
 @mixin screen-1240 {
-    @media (max-width: 1239.97px) {
-        @content;
-    }
+  @media (max-width: 1239.97px) {
+    @content;
+  }
 }
 @mixin screen-1400 {
-    @media (max-width: 1399.97px) {
-        @content;
-    }
+  @media (max-width: 1399.97px) {
+    @content;
+  }
 }
 @mixin screen-1440 {
-    @media (max-width: 1439.97px) {
-        @content;
-    }
+  @media (max-width: 1439.97px) {
+    @content;
+  }
 }
 @mixin screen-1600 {
-    @media (max-width: 1599.97px) {
-        @content;
-    }
+  @media (max-width: 1599.97px) {
+    @content;
+  }
 }
 @mixin screen-1920 {
-    @media (max-width: 1919.97px) {
-        @content;
-    }
+  @media (max-width: 1919.97px) {
+    @content;
+  }
 }
 @mixin min-screen-768 {
-    @media (min-width: 767.97px) {
-        @content;
-    }
+  @media (min-width: 767.97px) {
+    @content;
+  }
 }
 @mixin min-screen-992 {
-    @media (min-width: 991.97px) {
-        @content;
-    }
+  @media (min-width: 991.97px) {
+    @content;
+  }
 }

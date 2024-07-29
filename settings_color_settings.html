@@ -459,7 +459,7 @@
     <div class="gs-dash-main-content">
         <!-- breadcrumb section -->
         <div class="gs-page-breadcrumb-wrapper">
-            <h2 class="gs-page-title">Create New Blog</h2>
+            <h2 class="gs-page-title">Color Settings </h2>
             <nav class="breadcrumb-navs">
                 <ul>
                     <li>
@@ -481,81 +481,105 @@
         <!-- dashboard info card wrapper -->
         <form action="#">
             <div class="gs-dash-info-cards-wrapper bg-white p-24 flex-column gap-0 mb-40">
-                <h5 class="inner-title mb-24">Create New Blog</h5>
+                <h5 class="inner-title mb-24">Customize Color</h5>
+                <div class="color-picker-wrapper w-100 mb-4">
+                    <div class="color-picker-wrap w-100">
+                        <label for="color-picker-1" class="form-label">Main Color</label>
+                        <div class="color-picker-container">
 
-                <div class="hero-contents-wrapper w-100 mb-48">
-                    <div class="single-img-wrapper">
-                        <p class="title">Section Image</p>
-                        <label for="choose_img_11">
-                            <img class="hero-img" src="/assets/img/default-img.png" alt="hero-img">
-                        </label>
-                        <input class="d-none img-input" type="file" id="choose_img_11">
-                        <label class="choose-img-label" for="choose_img_11">choose Image</label>
-                        <span class="hint-msg">Recommended image size is 0000x0000</span>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="color-picker-1" class="color-picker" value="#0D99FF">
+                                <input type="text" id="color-code-1" class="color-code" readonly>
+                                <span class="hint-msg">You can change site's main color from here, it will replace the
+                                    website's
+                                    main color</span>
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
+                <div class="color-picker-wrapper w-100 mb-4">
+                    <div class="color-picker-wrap w-100">
+                        <label for="color-picker-1" class="form-label">Secondary Color</label>
+                        <div class="color-picker-container">
 
-                <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Blog Name</label>
-                    <!--  add .error on error -->
-                    <input type="text" class="form-control gs-dash-input" id="hero-input-6" placeholder="Address">
-                    <span class="error-msg d-none">This is an error message</span>
-                    <span class="hint-msg d-none">This is a hint text to help user</span>
-                </div>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="color-picker-1" class="color-picker" value="#FF0D20">
+                                <input type="text" id="color-code-1" class="color-code" readonly>
+                                <span class="hint-msg">You can change the site's secondary color from here, it will
+                                    replace the website's secondary color</span>
+                            </div>
 
-                <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Slug <span class="input-subheading">(Leave blank to
-                            auto
-                            generate)</span></label>
-                    <!--  add .error on error -->
-                    <input type="text" class="form-control gs-dash-input" id="hero-input-6" placeholder="Address">
-                    <span class="error-msg d-none">This is an error message</span>
-                    <span class="hint-msg d-none">This is a hint text to help user</span>
-                </div>
-
-                <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-6" class="form-label">Blog     Name</label>
-                    <div class="d-block w-full">
-
-                        <select class="gs-dash-nice-select w-full full-width-nice">
-                            <option value="en">Select Category</option>
-                            <option value="de">Deutsch</option>
-                            <option value="po">Portugues</option>
-                            <option value="fr">Francais</option>
-                            <option value="ar">Arabic</option>
-                        </select>
+                        </div>
                     </div>
-                    <span class="error-msg d-none">This is an error message</span>
-                    <span class="hint-msg d-none">This is a hint text to help user</span>
+
                 </div>
+                <div class="color-picker-wrapper w-100 mb-4">
+                    <div class="color-picker-wrap w-100">
+                        <label for="color-picker-1" class="form-label">Button Color</label>
+                        <div class="color-picker-container">
 
-                <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Short Description</label>
-                    <!--  add .error on error -->
-                    <textarea rows="3" class="form-control gs-dash-input" id="hero-input-4"
-                        placeholder="Description Text"></textarea>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="color-picker-1" class="color-picker" value="#0D99FF">
+                                <input type="text" id="color-code-1" class="color-code" readonly>
+                                <span class="hint-msg">You can change the site's Button color from here, it will replace
+                                    the website's Button color</span>
+                            </div>
 
-                    <!-- error & hint msg -->
-                    <span class="error-msg d-none">This is an error message</span>
-                    <span class="hint-msg d-none">This is a hint text to help user</span>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="color-picker-wrapper w-100 mb-4">
+                    <div class="color-picker-wrap w-100">
+                        <label for="color-picker-1" class="form-label">Button Hover Color</label>
+                        <div class="color-picker-container">
 
-                <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Description</label>
-                    <!--  add .error on error -->
-                    <textarea rows="5" class="form-control gs-dash-input" id="hero-input-4"
-                        placeholder="Description Text"></textarea>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="color-picker-1" class="color-picker" value="#007CD6">
+                                <input type="text" id="color-code-1" class="color-code" readonly>
+                                <span class="hint-msg">You can change the site's Button Hover color from here, it will
+                                    replace the website's Button Hover color</span>
+                            </div>
 
-                    <!-- error & hint msg -->
-                    <span class="error-msg d-none">This is an error message</span>
-                    <span class="hint-msg d-none">This is a hint text to help user</span>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="color-picker-wrapper w-100 mb-4">
+                    <div class="color-picker-wrap w-100">
+                        <label for="color-picker-1" class="form-label">Site Heading Color</label>
+                        <div class="color-picker-container">
 
+                            <div class="color-input-wrapper">
+                                <input type="color" id="color-picker-1" class="color-picker" value="#000F1A">
+                                <input type="text" id="color-code-1" class="color-code" readonly>
+                                <span class="hint-msg">you can change the site heading color from there, when you change
+                                    this color it will reflect the color in all the headings like
+                                    (h1,h2,h3,h4.h5.h6)</span>
+                            </div>
 
+                        </div>
+                    </div>
 
-                <button type="submit" class="template-btn primary-btn align-self-start">
-                    Submit
-                </button>
+                </div>
+                <div class="color-picker-wrapper w-100 mb-4">
+                    <div class="color-picker-wrap w-100">
+                        <label for="color-picker-1" class="form-label">Site Paragraph Color</label>
+                        <div class="color-picker-container">
+
+                            <div class="color-input-wrapper">
+                                <input type="color" id="color-picker-1" class="color-picker" value="#333F48">
+                                <input type="text" id="color-code-1" class="color-code" readonly>
+                                <span class="hint-msg">you can change site paragraph color from there</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button type="submit" class="template-btn primary-btn align-self-start  mt-3">Save Changes</button>
             </div>
         </form>
 
@@ -590,7 +614,7 @@
                         <input class="d-none img-input" type="file" id="hero-input-44">
                         <span class="hint-msg d-none">Recommended image size is 0000x0000</span>
                     </div>
-
+                    
                     <!-- inputs -->
                     <div class="dash-input-wrapper mb-24">
                         <label for="hero-input-42" class="form-label">Title</label>

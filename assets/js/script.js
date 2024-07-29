@@ -26,6 +26,35 @@
     );
   });
 
+  // Special color picker css
+  document.addEventListener("DOMContentLoaded", function () {
+    const colorPickers = document.querySelectorAll(".color-picker");
+    const colorCodes = document.querySelectorAll(".color-code");
+
+    colorPickers.forEach((colorPicker, index) => {
+      const colorCode = colorCodes[index];
+
+      function updateColor() {
+        colorCode.value = colorPicker.value;
+        colorCode.style.backgroundColor = colorPicker.value;
+        colorCode.style.color = getContrastingColor(colorPicker.value);
+      }
+
+      function getContrastingColor(color) {
+        const r = parseInt(color.substr(1, 2), 16);
+        const g = parseInt(color.substr(3, 2), 16);
+        const b = parseInt(color.substr(5, 2), 16);
+        const yiq = (r * 299 + g * 587 + b * 114) / 1000;
+        return yiq >= 128 ? "black" : "white";
+      }
+
+      colorPicker.addEventListener("input", updateColor);
+
+      // Initialize color code input with default color
+      updateColor();
+    });
+  });
+
   // 1.2 Data Background Color Set
   $("[data-background-color]").each(function () {
     $(this).css("background-color", $(this).attr("data-background-color"));

@@ -459,7 +459,7 @@
     <div class="gs-dash-main-content">
         <!-- breadcrumb section -->
         <div class="gs-page-breadcrumb-wrapper">
-            <h2 class="gs-page-title">Create New Blog</h2>
+            <h2 class="gs-page-title">Send Group Email </h2>
             <nav class="breadcrumb-navs">
                 <ul>
                     <li>
@@ -481,48 +481,18 @@
         <!-- dashboard info card wrapper -->
         <form action="#">
             <div class="gs-dash-info-cards-wrapper bg-white p-24 flex-column gap-0 mb-40">
-                <h5 class="inner-title mb-24">Create New Blog</h5>
+                <h5 class="inner-title mb-24">Group Mail Form</h5>
 
-                <div class="hero-contents-wrapper w-100 mb-48">
-                    <div class="single-img-wrapper">
-                        <p class="title">Section Image</p>
-                        <label for="choose_img_11">
-                            <img class="hero-img" src="/assets/img/default-img.png" alt="hero-img">
-                        </label>
-                        <input class="d-none img-input" type="file" id="choose_img_11">
-                        <label class="choose-img-label" for="choose_img_11">choose Image</label>
-                        <span class="hint-msg">Recommended image size is 0000x0000</span>
-                    </div>
-                </div>
 
                 <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Blog Name</label>
-                    <!--  add .error on error -->
-                    <input type="text" class="form-control gs-dash-input" id="hero-input-6" placeholder="Address">
-                    <span class="error-msg d-none">This is an error message</span>
-                    <span class="hint-msg d-none">This is a hint text to help user</span>
-                </div>
-
-                <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Slug <span class="input-subheading">(Leave blank to
-                            auto
-                            generate)</span></label>
-                    <!--  add .error on error -->
-                    <input type="text" class="form-control gs-dash-input" id="hero-input-6" placeholder="Address">
-                    <span class="error-msg d-none">This is an error message</span>
-                    <span class="hint-msg d-none">This is a hint text to help user</span>
-                </div>
-
-                <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-6" class="form-label">Blog     Name</label>
+                    <label for="hero-input-6" class="form-label">Select User Type</label>
                     <div class="d-block w-full">
 
                         <select class="gs-dash-nice-select w-full full-width-nice">
-                            <option value="en">Select Category</option>
-                            <option value="de">Deutsch</option>
-                            <option value="po">Portugues</option>
-                            <option value="fr">Francais</option>
-                            <option value="ar">Arabic</option>
+                            <option value="en">Select Type</option>
+                            <option value="de">All User</option>
+                            <option value="po">All Newslater Subscriber</option>
+                            <option value="fr">All Merchant </option>
                         </select>
                     </div>
                     <span class="error-msg d-none">This is an error message</span>
@@ -530,33 +500,29 @@
                 </div>
 
                 <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Short Description</label>
+                    <label for="hero-input-4" class="form-label">Email Subject </label>
                     <!--  add .error on error -->
-                    <textarea rows="3" class="form-control gs-dash-input" id="hero-input-4"
-                        placeholder="Description Text"></textarea>
-
-                    <!-- error & hint msg -->
+                    <input type="text" class="form-control gs-dash-input" id="hero-input-6" placeholder="Email Subject">
                     <span class="error-msg d-none">This is an error message</span>
                     <span class="hint-msg d-none">This is a hint text to help user</span>
                 </div>
 
                 <div class="dash-input-wrapper mb-32">
-                    <label for="hero-input-4" class="form-label">Description</label>
+                    <label for="hero-input-4" class="form-label">Email Body</label>
                     <!--  add .error on error -->
-                    <textarea rows="5" class="form-control gs-dash-input" id="hero-input-4"
-                        placeholder="Description Text"></textarea>
+                    <textarea rows="10" class="form-control gs-dash-input" id="hero-input-4"
+                        placeholder="Type message here"></textarea>
 
                     <!-- error & hint msg -->
                     <span class="error-msg d-none">This is an error message</span>
                     <span class="hint-msg d-none">This is a hint text to help user</span>
                 </div>
-
-
-
-                <button type="submit" class="template-btn primary-btn align-self-start">
+                <button type="submit" class="template-btn primary-btn align-self-start w-100">
                     Submit
                 </button>
             </div>
+
+
         </form>
 
         <!-- about feature -->
