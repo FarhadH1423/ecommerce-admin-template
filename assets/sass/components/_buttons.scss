@@ -42,6 +42,15 @@
       color: $white-color;
     }
   }
+
+  &.delet-btn {
+    background-color: $negative-color-500;
+    color: $white-color;
+
+    &:hover {
+      background-color: $negative-color-700;
+    }
+  }
 }
 
 .gs-dash-badge {
@@ -127,6 +136,7 @@
 }
 .del-icon-btn {
   background-color: $negative-color-500;
+  color: $white-color;
   &:hover {
     background-color: $negative-color-700;
   }

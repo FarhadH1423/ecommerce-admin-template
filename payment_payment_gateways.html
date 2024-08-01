@@ -482,7 +482,8 @@
             <div
                 class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center w-100">
                 <p class="sub-header-p mb-2 mb-md-0"><span class="sub-header">Manage Your Payment Gateways</span></p>
-                <button type="submit" class="template-btn primary-btn small-font">
+                <button type="submit" data-bs-toggle="modal" data-bs-target="#gs-dash-add-gateway" href="#"
+                    class="template-btn primary-btn small-font">
                     Add New Payment Gateway
                 </button>
             </div>
@@ -774,13 +775,13 @@
     <!-- main content end -->
 
     <!-- add new feature modal -->
-    <div class="gs-dash-details-modal gs-dash-slider-modal modal fade" id="gs-dash-add-new-category" tabindex="-1"
+    <div class="gs-dash-details-modal gs-dash-slider-modal modal fade" id="gs-dash-add-gateway" tabindex="-1"
         aria-labelledby="gs-dash-modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered max-w-500">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title fs-5" id="gs-dash-modalLabel">
-                        Add New Feature
+                        ADD NEW PAYMENT
                     </h4>
                     <button type="button" data-bs-dismiss="modal" aria-label="Close" class="close-btn">
                         <i class="fa-solid fa-circle-xmark"></i>
@@ -788,41 +789,123 @@
                 </div>
                 <div class="modal-body">
 
-                    <!-- thumbnail -->
-                    <div class="single-img-wrapper dash-input-wrapper mb-24">
-                        <div class="edit-img-wrapper hero-img thumb-210 mx-auto">
-                            <img class="hero-img" src="/assets/img/default-img.png" alt="hero-img">
-                            <div class="edit-btn-overlay">
-                                <label class="template-btn primary-btn" for="hero-input-44">choose Image</label>
-                            </div>
+
+                    <div class="dash-input-wrapper mb-24">
+                        <label for="hero-input-4" class="form-label">Name</label>
+                        <!--  add .error on error -->
+                        <input type="text" class="form-control gs-dash-input" id="hero-input-4" placeholder="Paypal">
+                        <!-- error & hint msg -->
+                        <span class="error-msg d-none">This is an error message</span>
+                        <span class="hint-msg d-none">This is a hint text to help user</span>
+                    </div>
+
+                    <div class="dash-input-wrapper mb-24">
+                        <label for="hero-input-5" class="form-label">Paypal Client Id</label>
+                        <!--  add .error on error -->
+                        <input type="text" class="form-control gs-dash-input" id="hero-input-5"
+                            placeholder="AcWYnysKa_elsQIAnlfsJXokR64Z31CeCbpis9G3msDC">
+                        <!-- error & hint msg -->
+                        <span class="error-msg d-none">This is an error message</span>
+                        <span class="hint-msg d-none">This is a hint text to help user</span>
+                    </div>
+                    <div class="dash-input-wrapper mb-24">
+                        <label for="hero-input-5" class="form-label">Paypal Client Secret</label>
+                        <!--  add .error on error -->
+                        <input type="text" class="form-control gs-dash-input" id="hero-input-5"
+                            placeholder="AcWYnysKa_elsQIAnlfsJXokR64Z31CeCbpis9G3msDC">
+                        <!-- error & hint msg -->
+                        <span class="error-msg d-none">This is an error message</span>
+                        <span class="hint-msg d-none">This is a hint text to help user</span>
+                    </div>
+                    <div class="dash-input-wrapper mb-24">
+                        <label for="hero-input-5" class="form-label">Paypal Text </label>
+                        <!--  add .error on error -->
+                        <input type="text" class="form-control gs-dash-input" id="hero-input-5"
+                            placeholder="Pay via your PayPal account.">
+                        <!-- error & hint msg -->
+                        <span class="error-msg d-none">This is an error message</span>
+                        <span class="hint-msg d-none">This is a hint text to help user</span>
+                    </div>
+                    <div class="active-btn d-flex justify-content-between mt-4 mb-4">
+                        <p>Paypal Sandbox Check</p>
+                        <div class="form-check form-switch d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                checked>
                         </div>
-                        <input class="d-none img-input" type="file" id="hero-input-44">
-                        <span class="hint-msg d-none">Recommended image size is 0000x0000</span>
                     </div>
 
-                    <!-- inputs -->
-                    <div class="dash-input-wrapper mb-24">
-                        <label for="hero-input-42" class="form-label">Title</label>
-                        <!--  add .error on error -->
-                        <input type="text" class="form-control gs-dash-input" id="hero-input-42" placeholder="Title">
-                        <!-- error & hint msg -->
-                        <span class="error-msg d-none">This is an error message</span>
-                        <span class="hint-msg d-none">This is a hint text to help user</span>
+
+                    <div class="checkbox-wrapper d-flex flex-wrap">
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="usd">
+                                <span class="checkmark"></span>
+                                USD
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="eur">
+                                <span class="checkmark"></span>
+                                EUR
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="gbp">
+                                <span class="checkmark"></span>
+                                GBP
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="usd">
+                                <span class="checkmark"></span>
+                                USD
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="eur">
+                                <span class="checkmark"></span>
+                                EUR
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="gbp">
+                                <span class="checkmark"></span>
+                                GBP
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="usd">
+                                <span class="checkmark"></span>
+                                USD
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="eur">
+                                <span class="checkmark"></span>
+                                EUR
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <label>
+                                <input type="checkbox" name="currency" value="gbp">
+                                <span class="checkmark"></span>
+                                GBP
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="dash-input-wrapper mb-24">
-                        <label for="hero-input-51" class="form-label">Text</label>
-                        <!--  add .error on error -->
-                        <input type="text" class="form-control gs-dash-input" id="hero-input-51" placeholder="Text">
-                        <!-- error & hint msg -->
-                        <span class="error-msg d-none">This is an error message</span>
-                        <span class="hint-msg d-none">This is a hint text to help user</span>
-                    </div>
                 </div>
                 <div class="modal-footer">
                     <!-- data-bs-dismiss="modal" -->
                     <button type="button" class="template-btn primary-btn w-100">
-                        Submit Feature
+                        create Payment
                     </button>
                 </div>
             </div>

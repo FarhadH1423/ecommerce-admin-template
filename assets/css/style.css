@@ -716,6 +716,11 @@ p {
     .template-btn.outline-btn:hover {
       background: #0d99ff;
       color: #ffffff; }
+  .template-btn.delet-btn {
+    background-color: #f2415a;
+    color: #ffffff; }
+    .template-btn.delet-btn:hover {
+      background-color: #ac0c22; }
 
 .gs-dash-badge {
   display: -webkit-box;
@@ -814,7 +819,8 @@ p {
     background-color: #005ea3; }
 
 .del-icon-btn {
-  background-color: #f2415a; }
+  background-color: #f2415a;
+  color: #ffffff; }
   .del-icon-btn:hover {
     background-color: #ac0c22; }
 
@@ -1346,7 +1352,7 @@ p {
   cursor: pointer;
   /* Ensures pointer cursor on hover */ }
 
-.active {
+.activated {
   border: 1px solid #0d99ff; }
 
 .delete-btn {
@@ -1832,6 +1838,58 @@ p {
     -ms-flex-align: center;
     align-items: center; }
 
+.modal-delete h6 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center; }
+
+.checkbox-item {
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
+.checkbox-item label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative; }
+
+.checkbox-item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+.checkbox-item input:checked + .checkmark {
+  border-color: #0d99ff;
+  /* Change this to your desired border color */ }
+
+.checkbox-item input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid #0d99ff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
 /******************************** navs ******************************/
 .gs-dash-sidebar {
   position: fixed;
@@ -2242,7 +2300,7 @@ p {
       .gs-dash-info-cards-wrapper .hero-contents-wrapper {
         gap: 20px; } }
     .gs-dash-info-cards-wrapper .hero-contents-wrapper .single-img-wrapper {
-      width: calc(25% - 60px); }
+      width: calc(25% - 70px); }
       .gs-dash-info-cards-wrapper .hero-contents-wrapper .single-img-wrapper .profile-img {
         max-width: 320px;
         max-height: 320px;
