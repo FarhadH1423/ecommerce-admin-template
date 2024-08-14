@@ -163,6 +163,9 @@ p {
 .min-h-200 {
   min-height: 200px !important; }
 
+.w-75 {
+  width: 80%; }
+
 /******************************* theme css **********************************/
 .bg-cover {
   background-size: cover;
@@ -1483,6 +1486,138 @@ p {
 
 .ticket-info:last-child {
   margin-bottom: 0; }
+
+.reply-img-one {
+  width: 60px;
+  height: 60px; }
+
+.reply-img-two {
+  width: 40px;
+  height: 40px; }
+
+.reply-img-three {
+  width: 24px;
+  height: 24px; }
+
+.input-wrapper-enable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+  .input-wrapper-enable .input-field {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .input-wrapper-enable .gs-dash-input {
+    width: 100%;
+    padding-right: 120px; }
+  .input-wrapper-enable .enable-disable-btn {
+    gap: 0; }
+  .input-wrapper-enable .button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 5px; }
+  @media (max-width: 576px) {
+    .input-wrapper-enable .input-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .input-wrapper-enable .input-field {
+      margin-bottom: 0; }
+    .input-wrapper-enable .button-group {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 10px; }
+    .input-wrapper-enable .button-group .btn {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
+  .input-wrapper-enable .button-group .btn {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    height: 100%;
+    padding: 8px 16px;
+    display: inline-block;
+    cursor: pointer; }
+  .input-wrapper-enable .btn-toggle.active {
+    background-color: #0d99ff;
+    color: #e6e7e8;
+    border-right: none; }
+  .input-wrapper-enable .btn-toggle:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    /* Remove the gap between the buttons */ }
+  .input-wrapper-enable .btn-toggle:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .input-wrapper-enable .btn-toggle {
+    border-radius: 0;
+    /* Resetting border-radius for all btn-toggle */
+    margin: 0;
+    /* Ensuring no margin between buttons */
+    padding: 10px 16px !important;
+    height: auto;
+    /* You can set a specific height if needed */ }
+  .input-wrapper-enable .btn-toggle:not(.active):hover {
+    background-color: #007bff;
+    color: white; }
+  .input-wrapper-enable .delete-btn {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-left: 1px solid #ccc; }
+  .input-wrapper-enable .delete-btn i {
+    font-size: 18px;
+    color: #6c757d; }
+  .input-wrapper-enable .btns {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    height: 100%;
+    padding: 9px 13px;
+    display: inline-block;
+    cursor: pointer; }
+  @media (max-width: 575.97px) {
+    .input-wrapper-enable .input-field {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+    .input-wrapper-enable .btn-toggle {
+      border-radius: 0;
+      margin: 0;
+      padding: 10px 16px !important;
+      height: auto; }
+    .input-wrapper-enable .btn-toggle:not(.active):hover {
+      background-color: #007bff;
+      color: white; }
+    .input-wrapper-enable .delete-btn {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      border-left: none;
+      border-top: 1px solid #ccc; }
+    .input-wrapper-enable .delete-btn i {
+      font-size: 18px;
+      color: #6c757d; }
+    .input-wrapper-enable .btns {
+      border-radius: 0;
+      border: 1px solid #ccc;
+      height: 100%;
+      padding: 9px 13px;
+      display: inline-block;
+      cursor: pointer; } }
 
 .table-responsive {
   -webkit-transition: all 0.3s ease-in;

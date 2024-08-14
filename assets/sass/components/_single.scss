@@ -450,17 +450,159 @@
   margin-bottom: 0;
 }
 
-.reply-img-one{
+.reply-img-one {
   width: 60px;
   height: 60px;
 }
 
-.reply-img-two{
+.reply-img-two {
   width: 40px;
   height: 40px;
 }
 
-.reply-img-three{
+.reply-img-three {
   width: 24px;
   height: 24px;
+}
+
+.input-wrapper-enable {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  .input-field {
+    flex-grow: 1;
+    // margin-bottom: 10px;
+  }
+
+  .gs-dash-input {
+    width: 100%;
+    padding-right: 120px;
+  }
+
+  .enable-disable-btn {
+    gap: 0;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  @media (max-width: 576px) {
+    .input-wrapper {
+      flex-direction: column;
+    }
+    .input-field {
+      margin-bottom: 0;
+    }
+    .button-group {
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .button-group .btn {
+      flex: 1;
+      // margin-right: 5px;
+    }
+  }
+  .button-group .btn {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    height: 100%;
+    padding: 8px 16px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .btn-toggle.active {
+    background-color: $primary-color-500;
+    color: $gray-color-100;
+    border-right: none;
+  }
+
+  .btn-toggle:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none; /* Remove the gap between the buttons */
+  }
+
+  .btn-toggle:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .btn-toggle {
+    border-radius: 0; /* Resetting border-radius for all btn-toggle */
+    margin: 0; /* Ensuring no margin between buttons */
+    padding: 10px 16px !important;
+    height: auto; /* You can set a specific height if needed */
+  }
+
+  .btn-toggle:not(.active):hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .delete-btn {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-left: 1px solid #ccc;
+  }
+
+  .delete-btn i {
+    font-size: 18px;
+    color: #6c757d;
+  }
+
+  .btns {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    height: 100%;
+    padding: 9px 13px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  @include screen-576 {
+    .input-field {
+      display: flex;
+      flex-wrap: no-wrap;
+    }
+
+    .btn-toggle {
+      border-radius: 0;
+      margin: 0;
+      padding: 10px 16px !important;
+      height: auto;
+    }
+
+    .btn-toggle:not(.active):hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .delete-btn {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      border-left: none;
+      border-top: 1px solid #ccc;
+    }
+
+    .delete-btn i {
+      font-size: 18px;
+      color: #6c757d;
+    }
+
+    .btns {
+      border-radius: 0;
+      border: 1px solid #ccc;
+      height: 100%;
+      padding: 9px 13px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
 }
