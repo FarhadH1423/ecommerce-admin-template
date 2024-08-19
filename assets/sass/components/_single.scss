@@ -606,3 +606,130 @@
     }
   }
 }
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dash-input-wrapper {
+  flex: 1 1 47%; /* Ensures both forms take up 48% of the width and maintain equal width */
+  min-width: 0; /* Prevents overflow */
+  position: relative;
+  margin-bottom: 0; /* Remove any bottom margin if present */
+}
+
+.form-control.gs-dash-input {
+  width: 100%; /* Ensures the input field stays within its container */
+  box-sizing: border-box;
+}
+
+.tagify {
+  width: 100%; /* Tagify input should take up the full width of the container */
+  box-sizing: border-box; /* Ensure Tagify respects the container's padding and borders */
+  margin-bottom: 0; /* Prevent extra space below Tagify */
+}
+
+.tagify__input {
+  width: auto !important;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.tagify__tag {
+  margin-bottom: 0 !important; /* Prevent any margin below tags */
+}
+
+/* If you have a margin-bottom for the dash-input-wrapper, move it here */
+
+.m-select-box {
+  .dash-input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Label styling */
+  .form-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  /* Select2 and input styling */
+  .selecttwocls + .select2-container--default .select2-selection--multiple {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    min-height: 38px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .select2-selection--multiple {
+    padding: 10px !important;
+  }
+
+  .select2-selection__choice__display {
+    padding-left: 30px !important;
+  }
+
+  .select2-selection__choice__remove {
+    padding: 5px 7px !important;
+    margin-left: 0px !important;
+  }
+
+  .selecttwocls + .select2-container--default .select2-selection__choice {
+    background-color: #0d99ff;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  .selecttwocls
+    + .select2-container--default
+    .select2-selection__choice__remove {
+    color: #fff;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+
+  .selecttwocls + .select2-container--default .select2-selection__rendered {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    line-height: 30px;
+  }
+
+  /* Placeholder text styling */
+  .selecttwocls
+    + .select2-container--default
+    .select2-selection--multiple
+    .select2-search--inline
+    .select2-search__field {
+    color: #6c757d;
+    font-size: 14px;
+  }
+
+  /* Error and hint messages */
+  .error-msg {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .hint-msg {
+    color: #6c757d;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  /* Hide the messages by default */
+  .d-none {
+    display: none;
+  }
+}
